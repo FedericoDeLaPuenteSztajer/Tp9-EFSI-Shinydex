@@ -1,10 +1,10 @@
 import './FavoritesList.css';
 
 function FavoritesList(props) {
-    const favoritesList= props.favoritesList;
+    const favoritesList = props.favoritesList;
 
     return (
-        <>
+        <div>
             <h2>Favoritos ({favoritesList.length})</h2>
             <ul>
                 {favoritesList[0] &&
@@ -20,7 +20,7 @@ function FavoritesList(props) {
                     <li>...</li>
                 }
             </ul>
-        </>
+        </div>
     )
 }
 

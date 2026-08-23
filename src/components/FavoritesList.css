@@ -1,0 +1,39 @@
+#root > form ~ div:nth-of-type(2) {
+    width: 30%;
+    min-height: 80vh;
+
+    padding: 3%;
+
+    background-color: #eeeeee;
+
+    border-left: 1px solid #dddddd;
+}
+
+#root > form ~ div:nth-of-type(2) h2 {
+    width: 100%;
+
+    margin: 0 0 5%;
+
+    text-align: left;
+
+    font-size: 1.5rem;
+}
+
+#root > form ~ div:nth-of-type(2) ul {
+    width: 100%;
+
+    margin: 0;
+    padding-left: 8%;
+
+    text-align: left;
+}
+
+#root > form ~ div:nth-of-type(2) li {
+    margin: 5% 0;
+
+    cursor: pointer;
+}
+
+#root > form ~ div:nth-of-type(2) li:hover {
+    font-weight: bold;
+}

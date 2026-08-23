@@ -15,7 +15,7 @@ function ItemCard(props) {
   };
 
   return (
-    <>
+    <div>
       <h1>{pokemon.name}</h1>
 
       <button onClick={() => ChangeFavorite()}>
@@ -32,8 +32,7 @@ function ItemCard(props) {
           </li>
         ))}
       </ul>
-
-    </>
+    </div>
   )
 }
 

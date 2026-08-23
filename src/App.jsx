@@ -4,7 +4,6 @@ import pokeAPI from './modules/PokeAPI.js';
 import './App.css';
 
 // Componentes
-import SearchBar from './components/SearchBar.jsx';
 import ItemCard from './components/ItemCard.jsx';
 import Header from './components/Header.jsx';
 import FavoritesList from './components/FavoritesList.jsx';
@@ -60,8 +59,7 @@ function App() {
 
   return (
     <>
-      <Header GoHome={GoHome} />
-      <SearchBar SearchPokemon={SearchPokemon} />
+      <Header GoHome={GoHome} SearchPokemon={SearchPokemon}/>
       {pokemon ?
         (
           <ItemCard pokemon={pokemon} favoritesList={favoritesList} setFavoritesList={setFavoritesList} />

@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+#root {
+    width: 100%;
+    min-height: 100vh;
+}
+
+#root > form ~ div {
+    float: left;
+}
