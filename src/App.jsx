@@ -70,7 +70,7 @@ function App() {
               <h1>{logState}</h1>
             )}
         </div>
-        <FavoritesList favoritesList={favoritesList} />
+        <FavoritesList favoritesList={favoritesList} SearchPokemon={SearchPokemon} />
       </section>
     </>
   )

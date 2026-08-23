@@ -1,11 +1,12 @@
-pokeData {
+.pokeData {
     width: 55%;
     min-height: 80vh;
 
     padding: 3%;
-    /*margin: 5%;*/
+    margin: 5%;
     border-style: solid;
     border-color: black;
+    border-radius: 2.5%;
 
     background-color: #ffffff;
 }
@@ -13,7 +14,7 @@ pokeData {
 
 /* Nombre + favorito */
 
-pokeData h1 {
+.pokeData h1 {
     display: inline-block;
 
     width: 80%;
@@ -24,7 +25,7 @@ pokeData h1 {
     font-size: 2rem;
 }
 
-pokeData button {
+.pokeData button {
     width: 15%;
     height: 8%;
 
@@ -38,14 +39,14 @@ pokeData button {
     cursor: pointer;
 }
 
-pokeData button:hover {
+.pokeData button:hover {
     background-color: #dddddd;
 }
 
 
 /* Imagen */
 
-pokeData img {
+.pokeData img {
     display: block;
 
     width: 50%;
@@ -57,7 +58,7 @@ pokeData img {
 
 /* Tipo */
 
-pokeData h2 {
+.pokeData h2 {
     width: 100%;
 
     margin: 2% 0;
@@ -70,7 +71,7 @@ pokeData h2 {
 
 /* Stats */
 
-pokeData ul {
+.pokeData ul {
     width: 100%;
 
     margin: 0;
@@ -79,6 +80,6 @@ pokeData ul {
     text-align: left;
 }
 
-pokeData li {
+.pokeData li {
     margin: 1% 0;
 }

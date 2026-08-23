@@ -1,4 +1,4 @@
-pokeFavorites {
+.pokeFavorites {
     width: 15%;
     min-height: 80vh;
 
@@ -9,7 +9,7 @@ pokeFavorites {
     border-left: 1px solid #dddddd;
 }
 
-pokeFavorites h2 {
+.pokeFavorites h2 {
     width: 100%;
 
     margin: 0 0 5%;
@@ -19,7 +19,7 @@ pokeFavorites h2 {
     font-size: 1.5rem;
 }
 
-pokeFavorites ul {
+.pokeFavorites ul {
     width: 100%;
 
     margin: 0;
@@ -28,12 +28,12 @@ pokeFavorites ul {
     text-align: left;
 }
 
-pokeFavorites li {
+.pokeFavorites li {
     margin: 5% 0;
 
     cursor: pointer;
 }
 
-pokeFavorites li:hover {
+.pokeFavorites li:hover {
     font-weight: bold;
 }
