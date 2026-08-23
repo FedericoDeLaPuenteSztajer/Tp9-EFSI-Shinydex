@@ -9,14 +9,12 @@ function SearchBar(props) {
   }
 
   return (
-    <>
-      <form onSubmit={submit}>
-        <label>Nombre del Shiny: </label>
-        <input type="text" name="pokeName" placeholder="Skorupi" required />
+    <form onSubmit={submit}>
+      <label>Nombre del Shiny: </label>
+      <input type="text" name="pokeName" placeholder="Skorupi" required />
 
-        <button type="submit">Search a Pokemon</button>
-      </form>
-    </>
+      <button type="submit">Search a Pokemon</button>
+    </form>
   )
 }
 

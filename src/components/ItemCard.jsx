@@ -15,14 +15,12 @@ function ItemCard(props) {
   };
 
   return (
-    <div>
+    <>
       <h1>{pokemon.name}</h1>
-
       <button onClick={() => ChangeFavorite()}>
         {favoritesList.find(f => f === pokemon.name) ? "❤️" : "🖤"}
       </button>
 
-      {/*HEART BUTTON WITH EMOJI*/}
       <img src={pokemon.sprite}></img>
       <h2>{pokemon.types}</h2>
       <ul>
@@ -32,7 +30,7 @@ function ItemCard(props) {
           </li>
         ))}
       </ul>
-    </div>
+    </>
   )
 }
 

@@ -59,15 +59,19 @@ function App() {
 
   return (
     <>
-      <Header GoHome={GoHome} SearchPokemon={SearchPokemon}/>
-      {pokemon ?
-        (
-          <ItemCard pokemon={pokemon} favoritesList={favoritesList} setFavoritesList={setFavoritesList} />
-        ) : (
-          <div>
-            <h1>{logState}</h1>
-          </div>)}
-      <FavoritesList favoritesList={favoritesList} />
+      <Header GoHome={GoHome} SearchPokemon={SearchPokemon} />
+      <section>
+        <div className='pokeData'>
+          {pokemon ?
+            (
+              <ItemCard pokemon={pokemon} favoritesList={favoritesList} setFavoritesList={setFavoritesList} />
+            ) : (
+
+              <h1>{logState}</h1>
+            )}
+        </div>
+        <FavoritesList favoritesList={favoritesList} />
+      </section>
     </>
   )
 }

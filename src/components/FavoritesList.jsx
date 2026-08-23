@@ -4,7 +4,7 @@ function FavoritesList(props) {
     const favoritesList = props.favoritesList;
 
     return (
-        <div>
+        <div className='pokeFavorites'>
             <h2>Favoritos ({favoritesList.length})</h2>
             <ul>
                 {favoritesList[0] &&
