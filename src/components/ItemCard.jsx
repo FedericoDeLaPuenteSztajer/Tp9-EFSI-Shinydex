@@ -6,7 +6,6 @@ function ItemCard(props) {
   const favoritesList = props.favoritesList;
   const setFavoritesList = props.setFavoritesList;
 
-
   const ChangeFavorite = () => {
     if (!favoritesList.find(f => f === pokemon.name)) {
       setFavoritesList([...favoritesList, pokemon.name]);

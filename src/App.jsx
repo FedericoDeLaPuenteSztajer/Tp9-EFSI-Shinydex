@@ -7,12 +7,20 @@ import './App.css';
 import SearchBar from './components/SearchBar.jsx';
 import ItemCard from './components/ItemCard.jsx';
 import Header from './components/Header.jsx';
+import FavoritesList from './components/FavoritesList.jsx';
 
 function App() {
 
   const [pokemon, setPokemon] = useState(null);
   const [logState, setLogState] = useState("Esperando busqueda");
-  const [favoritesList, setFavoritesList] = useState([]);
+  const [favoritesList, setFavoritesList] = useState(() => {
+    const saved = localStorage.getItem("favoritesList");
+    return saved ? JSON.parse(saved) : [];
+  });
+
+  useEffect(() => {
+    localStorage.setItem("favoritesList", JSON.stringify(favoritesList));
+  }, [favoritesList]);
 
   const GoHome = () => {
     setLogState("Esperando busqueda")
@@ -56,11 +64,12 @@ function App() {
       <SearchBar SearchPokemon={SearchPokemon} />
       {pokemon ?
         (
-          <ItemCard pokemon={pokemon} favoritesList={favoritesList} setFavoritesList={setFavoritesList}/>
+          <ItemCard pokemon={pokemon} favoritesList={favoritesList} setFavoritesList={setFavoritesList} />
         ) : (
           <div>
             <h1>{logState}</h1>
           </div>)}
+      <FavoritesList favoritesList={favoritesList} />
     </>
   )
 }
